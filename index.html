@@ -24,26 +24,13 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.3/dist/iconify-icon.min.js"></script>
 
-    <!-- Remove this and fill in your name & photo in the required areas -->
-    <script>
-      fetch('https://randomuser.me/api/?inc=name,picture')
-        .then((response) => response.json())
-        .then(({ results }) => results[0])
-        .then(({ name, picture }) => {
-          document.querySelector('#name').innerText = name.first
-          document.querySelector(
-            '.navbar-brand'
-          ).innerText = `${name.first} ${name.last}`
-          document.title = `${name.first} ${name.last} Personal Site`
-          document.querySelector('#profilepic').src = picture.large
-        })
-    </script>
+    
 
     <link href="styles/theme.css" rel="stylesheet" />
     <link href="styles/styles.css" rel="stylesheet" />
 
     <!-- Set Page Title Here -->
-    <title></title>
+    <title>Jackie Lin's Website</title>
   </head>
 
   <body>
@@ -82,6 +69,22 @@
                 >Contact</a
               >
             </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.linkedin.com/in/jackie-lin-a524a91b8/">Linkedin</a></li>
+                <li><a class="dropdown-item" href="https://github.com/jackielin97">GitHub</a></li>
+                <li><a class="dropdown-item" href="mailto:tun52511@temple.edu">Email Me</a></li>
+                <li><a class="dropdown-item" href="images/Jackie_Lin_Resume_Spring_2024.pdf" download="Jackie_Lin_Resume_Spring_2024.pdf">Downlad My Resume</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#contact">All Conttact</a></li>
+              </ul>
+            </li>
+          
           </ul>
         </div>
       </div>
@@ -95,17 +98,19 @@
       >
       <!-- Set Photo Here -->
         <img
-          style="height: 150px; width: 150px"
+          
+          style="height: 180px; width: 150px"
           class="rounded-circle"
-          draggable="false"
           id="profilepic"
-        />
+          src="images/JackieLin.jpg"
+        
+          />
       </div>
       <div class="row mx-auto">
         <h4 class="h1 font-weight-bold mx-auto text-center">
           <!-- Set Name Here -->
           Hi <iconify-icon icon="twemoji:waving-hand"></iconify-icon> I'm
-          <span id="name"></span>!
+          Jackie Lin!
         </h4>
       </div>
       <div class="row mx-auto">
@@ -208,51 +213,39 @@
       </div>
       <div class="row mx-auto">
         <h5 class="h5 mx-auto text-opacity-75 text-primary text-center mb-4">
-          I've worked on some neat things.
+          Some of the neat things I worked on.
         </h5>
       </div>
       <div class="row w-100">
-        <h5>Inspiro for Esperanza</h5>
+        <h5>Airport Database</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus
-          nisi in neque blandit auctor. Vestibulum pellentesque fringilla nulla
-          quis sagittis. Donec id erat sodales, fringilla est non, vestibulum
-          tellus. Suspendisse potenti. Fusce et dolor blandit, tincidunt eros
-          non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus
-          tincidunt purus. Suspendisse imperdiet massa nec sem dictum luctus.
-          Vestibulum at porta lectus, sed faucibus libero.
+          My team, comprising two other individuals and myself, collaborated extensively on designing a sophisticated database tailored for an airline company.
+           Through  discussions, we created database tables,  considering entities, 
+           their corresponding attributes, and the establishment of primary and foreign keys to ensure robust data relationships across tables. 
+           Furthermore, we  drew up a  ER diagrams, 
+           and discussed the relationships between entites.
+           This project not only provided a valuable learning experience but also offered an opportunity for meaningful collaboration and professional growth.
+
+
+
+
+
         </p>
       </div>
       <div class="row w-100">
-        <h5>Work From Home Pinterest</h5>
+        <h5>Restaurant Management</h5>
       </div>
       <div class="row w-100 mb-4">
         <p class="text-justify">
-          Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non
-          ex dapibus finibus. Nulla facilisi. Integer eu libero lorem.
-          Pellentesque eget pretium ligula. Donec finibus nibh sed leo dapibus
-          imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit
-          dolor, ac mollis risus. Vestibulum commodo turpis nulla, bibendum
-          varius urna dictum porta.
-        </p>
+          Me and a partner developed with C# a restaurant mangment system.
+          We used Microsoft Access and WinForms in order to store data for dishes, orders as well as any potenal user. 
+           We program and  generate a working GUI with winform that could be used for various menus. Using the program, 
+           we were able to modify the database we had created and you were able to insert,delete and update certain attributes.
+          </p>
       </div>
-      <div class="row w-100">
-        <h5>Query Dating Site</h5>
-      </div>
-      <div class="row w-100">
-        <p class="text-justify">
-          Fusce egestas lectus ac est porttitor congue. Mauris lacinia pharetra
-          odio ut egestas. Nullam facilisis condimentum consequat. Integer arcu
-          nibh, ullamcorper non fringilla quis, tempus sit amet turpis. Proin ac
-          gravida mi. Ut eros quam, pharetra venenatis pharetra at, porttitor
-          sit amet dolor. Ut et accumsan metus. Phasellus eros diam, tristique a
-          maximus vel, fringilla eu nisl. Pellentesque sed quam non urna dapibus
-          porta in in nibh. Phasellus lobortis nibh est, id pretium orci
-          efficitur at.
-        </p>
-      </div>
+    
       <div class="row mt-3 next">
         <a href="#courses" class="col"
           ><iconify-icon
@@ -344,11 +337,11 @@
       </div>
       <div class="row mx-auto">
         <h5 class="h5 mx-auto text-opacity-75 text-primary text-center">
-          I don't bite.
+          Please talk to me.
         </h5>
       </div>
       <div class="row my-4 contact-wrapper gap-3">
-        <a href="mailto:johndoe@gmail.com" class="col text-black">
+        <a href="mailto:tun52511@temple.edu" class="col text-black">
           <iconify-icon
             icon="logos:google-gmail"
             width="60"
@@ -358,7 +351,7 @@
             title="Email"
           ></iconify-icon>
         </a>
-        <a href="https://www.linkedin.com/in/johndoe/" class="col"
+        <a href="https://www.linkedin.com/in/jackie-lin-a524a91b8/" class="col"
           ><iconify-icon
             icon="skill-icons:linkedin"
             width="60"
@@ -368,7 +361,7 @@
             title="LinkedIn"
           ></iconify-icon>
         </a>
-        <a href="https://github.com/johndoe" class="col"
+        <a href="https://github.com/jackielin97" class="col"
           ><iconify-icon
             icon="skill-icons:github-dark"
             width="60"
@@ -380,17 +373,42 @@
         </a>
       </div>
       <div class="row mt-5">
-        <div>
-          <a href="#home">
-            <button type="button" class="btn btn-primary">
-              Return to Top<iconify-icon
-                icon="material-symbols:arrow-circle-up"
-                class="fs-5"
-                style="margin-bottom: -3.5px; margin-left: 5px"
-              ></iconify-icon></button
-          ></a>
-        </div>
+  <div>
+    <div class="btn-group ">
+    <a href="#home">
+      
+        <button type="button" class="btn btn-primary">
+          Return to Top
+          <iconify-icon
+            icon="material-symbols:arrow-circle-up"
+            class="fs-5"
+            style="margin-bottom: -3.5px; margin-left: 5px"
+          ></iconify-icon>
+        </button>
+        
       </div>
+    </a>
+     
+      <a href="images/Jackie_Lin_Resume_Spring_2024.pdf" download="Jackie_Lin_Resume_Spring_2024.pdf">
+        <button type ="button" class ="btn btn-primary">
+
+          Download Resume
+        </button>
+        
+        
+      </a>
+      
+      
+      
+     
+      </a>
+    </div>
+    
+    
+    </div>
+ 
+  </div>
+</div>
     </div>
 
     <script>
